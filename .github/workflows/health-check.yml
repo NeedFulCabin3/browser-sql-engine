@@ -1,0 +1,28 @@
+name: Code Health Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-codebase:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for Syntax Errors in JavaScript
+        run: |
+          node -c btree.js
+          node -c app.js
+
+      - name: Validate File Integrity
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f btree.js
+          test -f app.js
+          echo "All structural browser files present."
