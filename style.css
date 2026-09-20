@@ -1,0 +1,142 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #fbf3ea;
+  color: #3a2e26;
+}
+
+.wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  color: #b5541a;
+}
+
+header .sub {
+  margin-top: 4px;
+  color: #8a7768;
+  font-size: 0.95rem;
+}
+
+.panel {
+  background: #fffaf3;
+  border: 1px solid #eddcc7;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 22px;
+  box-shadow: 0 2px 6px rgba(150, 100, 60, 0.06);
+}
+
+.panel h2 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  color: #a05a2c;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 8px;
+  border: 1px solid #e4d2ba;
+  padding: 12px;
+  font-family: 'Consolas', monospace;
+  font-size: 0.95rem;
+  background: #fffdf9;
+  color: #3a2e26;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #d68a4a;
+}
+
+.btn-row {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background: #d9772f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #c15f1f;
+}
+
+button.secondary {
+  background: #efe1cf;
+  color: #7a5a3a;
+}
+
+button.secondary:hover {
+  background: #e6d2b6;
+}
+
+#status {
+  font-size: 0.85rem;
+  color: #8a7768;
+}
+
+#resultBox {
+  overflow-x: auto;
+}
+
+table.result-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+table.result-table th, table.result-table td {
+  border: 1px solid #ecdcc4;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+table.result-table th {
+  background: #f7e9d7;
+  color: #7a4a1e;
+}
+
+.error {
+  color: #a33a2b;
+  background: #fbeae4;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+.table-card {
+  border: 1px solid #eee0cd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  background: #fffdf8;
+}
+
+.table-card b {
+  color: #b5541a;
+}
+
+.table-card .meta {
+  font-size: 0.82rem;
+  color: #8a7768;
+  margin-top: 3px;
+}

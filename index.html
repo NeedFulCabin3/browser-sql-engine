@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MiniSQL - Browser DB Engine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>MiniSQL</h1>
+    <p class="sub">a tiny in-memory database with a B-Tree index, running entirely in your tab</p>
+  </header>
+
+  <div class="panel">
+    <textarea id="sqlInput" placeholder="CREATE TABLE users (id, name, age)
+INSERT INTO users VALUES (1, 'Alice', 30)
+SELECT * FROM users WHERE age > 20"></textarea>
+    <div class="btn-row">
+      <button id="runBtn">Run</button>
+      <button id="clearBtn" class="secondary">Clear DB</button>
+      <span id="status"></span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Result</h2>
+    <div id="resultBox"><em>nothing run yet</em></div>
+  </div>
+
+  <div class="panel">
+    <h2>Tables</h2>
+    <div id="tableList"></div>
+  </div>
+</div>
+
+<script src="btree.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
