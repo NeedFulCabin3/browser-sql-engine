@@ -1,6 +1,6 @@
 # Browser SQL Engine
 
-> A zero-backend SQL engine executing parsing, table storage, and B-Tree indexing directly inside the browser DOM.
+A zero-backend SQL engine executing parsing, table storage, and B-Tree indexing directly inside the browser DOM.
 
 ## Overview
 Most web applications lean on external databases or heavy WebAssembly runtimes to evaluate queries. This project implements a core database architecture from scratch in Vanilla JavaScript, running entirely inside your browser tab without any native database binaries.
